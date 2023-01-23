@@ -8,6 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        onNeutralBg: 'var(--onNeutralBg)',
+        neutralBg: 'var(--neutralBg)',
+        onPrimaryBg: 'var(--onPrimaryBg)',
+        primaryBg: 'var(--primaryBg)',
+        primary: 'var(--primary)',
+      },
       fontFamily: {
         roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans],
         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans]
