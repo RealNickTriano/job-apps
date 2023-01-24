@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import DarkModeSwitch from './components/DarkModeSwitch'
 import DatePicker from './components/DatePicker'
 import Input from './components/Input'
 import Navbar from './components/Navbar'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
-const colors = ['green', 'red', 'blue']
+const colors = ['stone', 'lime', 'sky', 'amber', 'teal', 'violet', 'rose']
 const modes = ['light', 'dark']
 
 function App() {
@@ -20,18 +21,22 @@ function App() {
     <>
       <div className={`min-h-screen bg-primaryBg theme-${color} theme-${mode}`}>
         <Navbar />
-        <div className='flex justify-center items-center'>
+        <div className='flex flex-col justify-center items-center pb-6'>
           <ThemeSwitcher 
             colors={colors}
-            modes={modes}
+            chosenColor={color}
             setColor={setColor}
+          />
+          <DarkModeSwitch 
+            modes={modes}
+            chosenMode={mode}
             setMode={setMode}
           />
         </div>
         <div className="px-24">
           <div className='bg-primary p-24 rounded-md shadow-md w-full h-full'>
             <form action="" 
-              className='flex flex-col justify-center items-center gap-12 text-onNeutralBg'
+              className='flex flex-col justify-center items-center gap-12 text-onPrimaryBg'
             >
               <Input 
                 name={'First Name'}

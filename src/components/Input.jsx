@@ -6,7 +6,7 @@ const Input = ({ id, name, value, onChange, type }) => {
     <div className='flex flex-col justify-center items-start font-roboto'>
         <label 
             htmlFor={id}
-            className='font-medium text-md'
+            className='font-medium text-md text-onPrimaryBg'
         >
             {name}
         </label>
