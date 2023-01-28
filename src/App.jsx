@@ -11,11 +11,11 @@ const modes = ['light', 'dark']
 
 function App() {
   const [color, setColor] = useState(colors[0])
-  const [mode, setMode] = useState(modes[0])
+  const [mode, setMode] = useState(modes[1])
   
   return (
     <>
-      <div className={`min-h-screen bg-primaryBg theme-${color} theme-${mode}`}>
+      <div className={`min-h-screen bg-neutralBg theme-${color} theme-${mode}`}>
         <Navbar />
         <Routes>
           <Route 

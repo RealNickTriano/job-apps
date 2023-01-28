@@ -13,6 +13,7 @@ module.exports = {
         neutralBg: 'var(--neutralBg)',
         onPrimaryBg: 'var(--onPrimaryBg)',
         primaryBg: 'var(--primaryBg)',
+        secondaryBg: 'var(--secondaryBg)',
         primary: 'var(--primary)',
       },
       fontFamily: {

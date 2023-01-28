@@ -5,16 +5,16 @@
 /* Themes */
 @layer base {
     :root {
-        --color-neutral-50: theme('colors.gray.50');
-        --color-neutral-100: theme('colors.gray.100');
-        --color-neutral-200: theme('colors.gray.200');
-        --color-neutral-300: theme('colors.gray.300');
-        --color-neutral-400: theme('colors.gray.400');
-        --color-neutral-500: theme('colors.gray.500');
-        --color-neutral-600: theme('colors.gray.600');
-        --color-neutral-700: theme('colors.gray.700');
-        --color-neutral-800: theme('colors.gray.800');
-        --color-neutral-900: theme('colors.gray.900');
+        --color-neutral-50: theme('colors.neutral.50');
+        --color-neutral-100: theme('colors.neutral.100');
+        --color-neutral-200: theme('colors.neutral.200');
+        --color-neutral-300: theme('colors.neutral.300');
+        --color-neutral-400: theme('colors.neutral.400');
+        --color-neutral-500: theme('colors.neutral.500');
+        --color-neutral-600: theme('colors.neutral.600');
+        --color-neutral-700: theme('colors.neutral.700');
+        --color-neutral-800: theme('colors.neutral.800');
+        --color-neutral-900: theme('colors.neutral.900');
     }
 }
 
@@ -113,6 +113,7 @@
     --neutralBg: theme('colors.white');
     --onNeutralBg: var('colors.black');
     --primaryBg: var(--color-primary-100);
+    --secondaryBg: var(--color-primary-200);
     --onPrimaryBg: var('colors.black');
     --primary: var(--color-primary-500);
 }
@@ -120,9 +121,11 @@
 .theme-dark {
     --neutralBg: var(--color-neutral-800);
     --onNeutralBg: theme('colors.white');
-    --primaryBg: var(--color-primary-900);
-    --onPrimaryBg: theme('colors.black');
-    --primary: var(--color-primary-600);
+    --primaryBg: var(--color-primary-600);
+    --secondaryBg: var(--color-primary-900);
+    --onSecondaryBg: var(--color-primary-300);
+    --onPrimaryBg: var(--color-primary-100);
+    --primary: var(--color-primary-300);
 }
 
 /* Change autofill bg color */
