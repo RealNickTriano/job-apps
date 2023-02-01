@@ -15,7 +15,7 @@ function App() {
   
   return (
     <>
-      <div className={`min-h-screen bg-neutralBg theme-${color} theme-${mode}`}>
+      <div className={`min-h-screen bg-primaryBg theme-${color} theme-${mode} flex flex-col justify-center items-center`}>
         <Navbar />
         <Routes>
           <Route 
